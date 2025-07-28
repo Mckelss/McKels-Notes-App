@@ -193,29 +193,31 @@ a{
 }
 
 .title {
-    width: 25%;
-    padding: 20px;
-    margin-bottom: 15px;
-    border: 1px solid #4da6ff;
-    border-radius: 8px;
-    background-color: #1a1a1a;
-    color: #4da6ff;
-    font-size: 18px;
+  max-width: 450%;
+  width: 33%;
+  padding: 25px;
+  margin-bottom: 15px;
+  border: 1px solid #4da6ff;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #4da6ff;
+  font-size: 18px;
 
 }
 
 
 .content {
-width: 45%;
-padding: 12px;
-margin-bottom: 15px;
-border: 1px solid #4da6ff;
-border-radius: 8px;
-background-color: #1a1a1a;
-color: #4da6ff;
-font-size: 16px;
-min-height: 100px;
-resize: vertical;
+  max-width: 500px;
+  width: 55%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #4da6ff;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #4da6ff;
+  font-size: 16px;
+  min-height: 170px;
+  resize: vertical;
 
 }
 

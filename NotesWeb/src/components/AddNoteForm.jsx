@@ -18,7 +18,7 @@ const AddNoteForm = ({onaddNote}) => {
             setIsFormVisible(false)
             
         } else {
-            alert('STUPID! PUT SOME TEXT ON IT')
+            alert('Please fill your text on it')
         }
     }
 

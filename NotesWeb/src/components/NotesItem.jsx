@@ -10,7 +10,7 @@ const NotesItem = ({note, onEdit, onDelete}) => {
         onEdit(note.id, editTitle.trim(), editContent.trim());
         setIsEditing(false);
       }else {
-        alert('Are you an idiot? fill in both title and content, you retard!')
+        alert('fill in both title and content')
       }
     };
 
@@ -21,7 +21,7 @@ const NotesItem = ({note, onEdit, onDelete}) => {
     }
 
     const handleDelete = () => {
-      if(window.confirm('Are you sure you want to delete this note dumbass? ')) {
+      if(window.confirm('Are you sure you want to delete this note? ')) {
         onDelete(note.id)
       }
     }
