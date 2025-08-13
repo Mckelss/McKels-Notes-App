@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+    color: rgb(77, 166, 255)    ;
+    background: black;
+    font-family: "Inter", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+ background: $bcolor;
+ -webkit-mask: url($url);
+ mask: url($url);
+ -webkit-mask-size: $x1 $y1;
+ mask-size: $x1 $y1;
+ border: $bor;
+ color: $col;
+}
+
+.header {
+ text-align: center;
+ font-family: 'Roboto', sans-serif;
+ font-size: 34px;
+ margin-top: 12vh;
+}
+
+.footer {
+ text-align: center;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: 20px;
+ margin-top: 15vh;
+}
+
+.button-container-1 {
+ position: relative;
+ width: 100px;
+ height: 50px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 6vh;
+ overflow: hidden;
+ border: 1px solid;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: 20px;
+ transition: 0.5s;
+ letter-spacing: 1px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 80px;
+
+ button {
+  width: 101%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: none;
+
+  @include button(red,
+  "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+  2300%,
+  100%,
+  none,
+  #fff);
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+
+  &:hover {
+   -webkit-animation: ani 0.7s steps(22) forwards;
+   animation: ani 0.7s steps(22) forwards;
+  }
+ }
+}
+
+.mas {
+    position: absolute;
+    color: #4da6ff;
+    text-align: center;
+    width: 101%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 17px;
+    overflow: hidden;
+	font-weight: bold;
+
+}
+
+@-webkit-keyframes ani {
+ from {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+
+ to {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+}
+
+@keyframes ani {
+ from {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+
+ to {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+}
+
+@-webkit-keyframes ani2 {
+ from {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+
+ to {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+}
+
+@keyframes ani2 {
+ from {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+
+ to {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+}
+
+a{
+	color:#00ff95;
+}
+
+.button-container-3 {
+ position: relative;
+ width: 100px;
+ height: 50px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 8vh;
+ overflow: hidden;
+ border: 1px solid #000;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ transition: 0.5s;
+ letter-spacing: 1px;
+ border-radius: 8px;
+
+ button {
+  width: 101%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+
+  @include button(#000, "https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png",
+  7100%,
+  100%,
+  none,
+  #fff);
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+
+  &:hover {
+   -webkit-animation: ani 0.7s steps(70) forwards;
+   animation: ani 0.7s steps(70) forwards;
+  }
+ }
+}
+
+.title {
+  max-width: 450%;
+  width: 33%;
+  padding: 25px;
+  margin-bottom: 15px;
+  border: 1px solid #4da6ff;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #4da6ff;
+  font-size: 18px;
+
+}
+
+
+.content {
+  max-width: 500px;
+  width: 55%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #4da6ff;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #4da6ff;
+  font-size: 16px;
+  min-height: 170px;
+  resize: vertical;
+
+}
+
+.save-notes {
+    padding: 10px 20px;
+    border: 2px solid #4da6ff;
+    border-radius: 8px;
+    background-color: #4da6ff;
+    color: #1a1a1a;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.cancel-btn {
+    padding: 10px 20px;
+    border: 2px solid #4da6ff;
+    border-radius: 8px;
+    color: #4da6ff;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+}
+
+.cancel-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4da6ff;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.cancel-btn:hover::after {
+  width: 100%;
+}
+
+.cancel-btn:hover {
+  color: white;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    border: 2px solid #4da6ff;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    border: 2px solid #4da6ff;
+    border-radius: 8px;
+    color: #4da6ff;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+}
+
+.save-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4da6ff;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.save-btn:hover::after {
+  width: 100%;
+}
+
+.save-btn:hover {
+  color: white;
+}
+
+.delete-btn {
+    background: none;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    color: red;
+    position: relative;
+    background-color: transparent;
+}
+
+
+.delete-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.delete-btn:hover::after {
+  width: 100%;
+}
+
+.delete-btn:hover {
+  color: white;
+}
+
+
+.edit-btn{
+    padding: 4px 8px;
+    border: 2px solid #4da6ff;
+    border-radius: 4px;
+    color: #4da6ff;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 12px;
+    background: none; 
+    background-color: transparent;
+    position: relative;
+    
+}
+
+
+.edit-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4da6ff;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.edit-btn:hover::after {
+  width: 100%;
+}
+
+.edit-btn:hover {
+  color: white;
+}
+
+.note-buttons {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.note-view {
+   border-style: solid;
+  border-color: #4da6ff;
+  max-width: 800px;
+  margin: 30px auto; // Changed from "30px 10px" to "30px auto" for centering
+  border-width: 1px;
+  padding: 20px;
+  border-radius: 8px;
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    max-width: 95%;
+    margin: 15px auto;
+    padding: 12px;
+  }
+}
+    
+
+.note-title {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+  font-weight: 600;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  
+}
+
+.note-content {
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  max-height: 550px;
+  overflow-y: auto;
+  padding-left: 10px;
+  text-align-last: left;
+  text-justify: inter-word;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  hyphens: auto;
+  font-family: "Inter", sans-serif;
+  
+}
+
+.note-meta {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.note-date {
+  color: white;
+  font-size: 0.85em;
+}
+
+.note-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.snip {
+    border-style: solid;
+    text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.notes {
+  margin: 10px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs {
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.edits {
+    margin: 10px;
+}
